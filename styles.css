@@ -43,7 +43,7 @@ a:not(.click):hover {
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden;
     position: fixed;
     width: 100%;
