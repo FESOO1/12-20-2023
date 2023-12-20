@@ -52,7 +52,7 @@ main {
 
 @keyframes back-color-change {
     0%{background: royalblue;}
-    20%{background: rgb(68, 255, 0);}
+    20%{background: rgb(3, 142, 147);}
     40%{background: blueviolet;}
     60%{background: orange;}
     80%{background: mediumspringgreen;}
@@ -60,11 +60,17 @@ main {
 }
 
 .box {
-    opacity: 0.5;
+    opacity: 0.3;
     border-radius: 1rem;
     width: 200px;
     height: 200px;
     background-color: white;
-    /* margin-top: 690px; */
+    transform: translateY(720px);
     transform: rotateZ(25deg);
+    animation: 12s linear infinite spinner-boxes;
+}
+
+@keyframes spinner-boxes {
+    from{transform: translateY(720px) rotateZ(25deg);}
+    to{transform: translateY(-300px) rotateZ(85deg);}
 }
