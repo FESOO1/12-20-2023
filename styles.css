@@ -42,12 +42,13 @@ a:hover {
 }
 
 main {
+    display: flex;
     overflow: hidden;
     position: fixed;
     width: 100%;
     height: 92vh;
     background-color: royalblue;
-    animation: 12s linear infinite back-color-change;
+    animation: 22s linear infinite back-color-change;
 }
 
 @keyframes back-color-change {
@@ -67,10 +68,44 @@ main {
     background-color: white;
     transform: translateY(720px);
     transform: rotateZ(25deg);
-    animation: 12s linear infinite spinner-boxes;
+    animation: 22s linear infinite spinner-boxes;
 }
 
 @keyframes spinner-boxes {
     from{transform: translateY(720px) rotateZ(25deg);}
     to{transform: translateY(-300px) rotateZ(85deg);}
+}
+
+.box-1 {
+    opacity: 0.3;
+    border-radius: 1rem;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    transform: translateY(720px);
+    transform: rotateZ(0deg);
+    animation: 12s linear infinite spinner-boxes-1;
+}
+
+@keyframes spinner-boxes-1 {
+    from{transform: translateY(720px);}
+    to{transform: translateY(-300px) rotateZ(180deg);}
+}
+
+.box-2 {
+    opacity: 0.3;
+    border-radius: 1rem;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    transform: translateY(720px);
+    transform: rotateZ(0deg);
+    animation: 15s linear infinite spinner-boxes-2;
+    animation-delay: 5s;
+}
+
+@keyframes spinner-boxes-2 {
+    from{transform: translateY(720px);}
+    to{transform: translateY(-300px) rotateZ(70deg);
+    border-radius: 10rem;}
 }
