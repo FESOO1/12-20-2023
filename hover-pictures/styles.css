@@ -27,7 +27,7 @@ body {
     background: white;
     border-radius: 1rem;
     position: absolute;
-    transform: translate(1px, -10px) rotateZ(4deg);
+    transform: translate(1px) rotateZ(15deg);
     overflow: hidden;
     background: url(/assets/176451-meloch-ee_glava_vtoraya-bill_skarsgrd-kloun-poster-1080x1920.jpg) no-repeat;
     background-size: cover;
@@ -40,7 +40,7 @@ body {
     background: white;
     border-radius: 1rem;
     position: absolute;
-    transform: translateX(30px) rotateZ(7deg);
+    transform: translateX(0px) rotateZ(5deg);
     background: url(/assets/ce4553ac3c7f7696aaeaaf543de614a3.jpeg) no-repeat;
     background-size: cover;
 }
