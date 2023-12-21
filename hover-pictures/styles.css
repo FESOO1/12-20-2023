@@ -66,3 +66,47 @@ body {
     background: url(/assets/img3.akspic.ru-pennivajz_oboi-meloch-zhivopis-art-kloun-1080x1920.jpg) no-repeat;
     background-size: cover;
 }
+
+.container:hover .img-4 {
+    animation: 0.3s linear 1 forwards hover-4;
+}
+
+@keyframes hover-4 {
+    from{transform: translate(-20px, 20px) rotateZ(-14deg);}
+    to{transform: translate(-500px, 80px) rotateZ(-20deg);}
+}
+
+.container:hover .img-3 {
+    animation: 300ms linear 1 forwards hover-3;
+}
+
+@keyframes hover-3 {
+    from{transform: translate(-15px, 10px) rotateZ(-5deg);}
+    to{transform: translate(-250px, 5px) rotateZ(-11deg);}
+}
+
+.container:hover .img-2 {
+    animation: 300ms linear 1 forwards hover-2;
+}
+
+@keyframes hover-2 {
+    from{transform: translateX(0px) rotateZ(5deg);}
+    to{transform: translate(500px, 80px) rotateZ(22deg);}
+}
+
+.container:hover .img-1 {
+    animation: 300ms linear 1 forwards hover-1;
+}
+
+@keyframes hover-1 {
+    from{transform: translate(1px) rotateZ(15deg);}
+    to{transform: translate(250px, 1px) rotateZ(10deg);}
+}
+
+/* LINK */
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
