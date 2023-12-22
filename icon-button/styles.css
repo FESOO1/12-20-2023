@@ -20,20 +20,54 @@ body {
     height: 222px;
     display: flex;
     justify-content: center;
-    background: rgb(24,119,242);
+    background: white;
     border-radius: 10rem;
     position: fixed;
     overflow: hidden;
 }
 
+.container::before {
+    content: '';
+    width: 222px;
+    height: 222px;
+    position: absolute;
+    background: rgb(24,119,242);
+    transform: rotateZ(-45deg) translate(-250px);
+}
+
+.container:hover::before {
+    animation: 300ms linear 1 forwards hover-1;
+}
+
+.container:hover i {
+    animation: 300ms linear 1 forwards hover-i;
+}
+
+@keyframes hover-i {
+    from{color: rgb(24,119,242);
+    }
+    to{color: white;
+    transform: scale(105%,105%);}
+}
+
+@keyframes hover-1 {
+    0%{transform: rotateZ(-45deg) translate(-250px);}
+    70%{transform: rotateZ(-45deg) translate(70px);}
+    100%{transform: rotateZ(-45deg) translate(0px);}
+}
+
 i {
+    position: absolute;
+    z-index: 10;
     font-style: normal;
     font-family: 'Lato', sans-serif;
-    font-size: 17rem;
-    color: white;
+    font-size: 13rem;
+    margin-left: -40px;
+    color: rgb(24,119,242);
+    transition: 0.3s;
 }
 
 a {
-    margin-top: -30px;
+    margin-top: -20px;
     text-decoration: none;
 }
