@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,11 +22,29 @@ body {
 }
 
 img {
-    padding: 10px 20px;
-    background-color: white;
-    border-radius: 1rem;
+    padding: 70px;
+    transition: 0.2s;
+    filter: drop-shadow(1px 4px 0px white);
 }
-
+/* 
 img:hover {
     background: rgb(222,222,222);
+}
+
+ */
+
+a {
+    border: 2px solid rgb(0, 140, 255);
+    /* background: white; */
+    border-radius: 15rem;
+}
+
+a:hover img {
+    width: 455px;
+    height: 455px;
+}
+
+a:hover {
+    background-color: rgba(10,10,10,0.4);
+    border: 0.5px solid rgb(0, 140, 255);
 }
