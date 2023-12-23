@@ -16,8 +16,20 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     background: white;
     width: 700px;
     height: 500px;
+}
+
+.box, .box-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    position: absolute  ;
 }
