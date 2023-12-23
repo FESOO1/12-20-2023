@@ -19,17 +19,36 @@ body {
     justify-content: center;
     align-items: center;
     background: white;
-    width: 700px;
+    width: 250px;
+    height: 500px;
+    position: fixed;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.img-1 {
+    width: 100%;
     height: 500px;
 }
 
-.box, .box-1 {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
+a {
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+    background: red;
+    position: absolute;
+    padding: 0 33px;
+    margin-top: 455px;
+    transform: translateY(46px);
 }
 
-h1 {
-    position: absolute  ;
+.container:hover a {
+    animation: 300ms linear 1 forwards hover;
 }
+
+@keyframes hover {
+    from{transform: translateY(46px);}
+    to{transform: translateY(0px);}
+}
+
+
