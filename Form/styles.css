@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
 
 
 * {
@@ -23,6 +23,8 @@ body {
     display: flex;
     border-radius: 0.5rem;
     overflow: hidden;
+    border-right: 2px solid rgb(111,111,250);
+    border-left: 2px solid rgb(111,111,250);
 }
 
 /* img {
@@ -49,6 +51,7 @@ h1 {
     text-align: center;
     color: white;
     padding-top: 20px;
+    
 }
 
 input[type="email"] {
@@ -83,7 +86,7 @@ form {
 }
 
 #email, #password {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 #register {
@@ -93,12 +96,19 @@ form {
     border-radius: 0.5rem;
     margin-left: -5px;
     margin-top: 15px;
+    font-family: 'K2D', sans-serif;
+    font-weight: 900;
+}
+
+#register:hover {
+    background: rgb(220,220,220);
 }
 
 label {
     color: white;
     font-size: 1.1em;
     margin-left: 5px;
+    font-family: 'K2D', sans-serif;
 }
 
 .terms {
@@ -110,3 +120,24 @@ label {
     color: white;
 }
 
+::-webkit-input-placeholder {
+    font-family: 'K2D', sans-serif;
+}
+
+
+/* Have an account section */
+
+.last-section {
+    display: flex;
+    column-gap: 7px;
+    justify-content: center;
+}
+
+p {
+    color: white;
+}
+
+.login {
+    color: blue;
+    text-decoration: none;
+}
