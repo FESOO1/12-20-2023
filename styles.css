@@ -165,23 +165,3 @@ Practice
 
 
 */
-
-
-p {
-    margin-top: 20px;
-    margin-left: 50px;
-    position: fixed;
-    width: 300px;
-}
-
-p:first-of-type {
-    margin-top: 150px;
-}
-
-p:last-of-type {
-    margin-top: 300px;
-}
-
-p::before {
-    content: "Question #";
-}
